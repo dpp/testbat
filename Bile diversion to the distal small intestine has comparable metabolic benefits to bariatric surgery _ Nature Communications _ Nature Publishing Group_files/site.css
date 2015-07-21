@@ -1,0 +1,207 @@
+/*
+****
+* Tablet break point
+* First break point for tablets
+****
+*/
+@media screen and (max-width: 1000px) {
+	#header {
+		min-height: 128px;
+	}
+	#header h1.block-anchor a {
+		height: 70px;
+	}
+}
+
+@media screen and (min-width : 521px) and (max-width : 767px) {  
+	#header {
+		background: url(/view/ncomms/images/journal_mobile_header_x2.jpg) no-repeat left top #dde6e8;
+	}
+}
+
+/*
+****
+* Tablet break point
+* Second break point for tablets, can be used to target iPad in portrait
+****
+*/
+
+@media screen and (max-width: 768px) {
+
+	#content .journal-intro .search {
+		display:none;
+	}
+
+	#content .img-week img {
+		clear: right;
+	}
+
+	#content .site-links {
+		margin-bottom: 20px;
+	}
+
+	#content .site-links .in-the-news,
+	#content .site-links .about  {
+		background-position: left top;
+	}
+}
+
+/*
+* Mobile break point - includes structure changes so needs all device detection matches here
+*/
+
+@media screen and (max-width : 520px),
+		screen and (-webkit-min-device-pixel-ratio : 1.3) and (max-width : 640px) and (orientation : landscape),
+		screen and (-webkit-min-device-pixel-ratio : 1.3) and (max-width : 480px) and (orientation : portrait),
+		screen and (-o-min-device-pixel-ratio: 13/10) and (max-width : 640px) and (orientation : landscape),
+		screen and (-o-min-device-pixel-ratio: 13/10) and (max-width : 480px) and (orientation : portrait),
+		screen and (min-resolution: 1.3dppx) and (max-width : 640px) and (orientation : landscape),
+		screen and (min-resolution: 1.3dppx) and (max-width : 480px) and (orientation : portrait)  {
+
+	#header h1.block-anchor a {
+		height: 50px;
+	}
+	
+	/*
+	****
+	* Main page structure
+	****
+	*/
+
+	body {
+		background: #FFF;
+	}
+
+	#content .journal-intro .intro p  {
+		width:300px;
+	}
+
+	#content .img-week p,
+	#content .img-week h3 {
+		/*margin: 0;*/
+		padding-top: 10px;
+	}
+
+	#content .img-week h2 {
+		/*float: left;*/
+		margin-top: 0;
+	}
+
+	#content .img-week img {
+		max-width: 295px;
+	}
+
+	#content .site-links .column {
+		width: 100%;
+	}
+
+	#content .site-links .about {
+		margin-top: 20px;
+	}
+
+	/*
+	****
+	* Page Header & Navigation
+	****
+	*/
+
+	#constrain-header {
+		background: #FFF;
+	}
+
+	#header {
+	    background: url(/view/ncomms/images/journal_mobile_header.jpg) no-repeat left top #dde6e8;
+	}
+
+	ul.global-nav {
+		background: #CBCBCB url(/nature/images/top-gradient.png) 50% 0 repeat-x;
+		background: -webkit-gradient(linear, 0 0, 0 310, from(#202020), to(#CBCBCB));
+		background: -webkit-linear-gradient(top, #202020, #CBCBCB 310px);
+		background: -moz-linear-gradient(top, #202020, #CBCBCB 310px);
+		background: -o-linear-gradient(top, #202020, #CBCBCB 310px);
+		background: linear-gradient(to bottom, #202020, #CBCBCB 310px);
+		width:100%;
+	}
+
+	.js-enabled #content .tab-sections .browse .tab-link {
+		left: 32%;
+		top: 1.8ex;
+	}
+
+	.js-enabled #content .tab-sections .tab-link.on {
+		top: 0;
+	}
+
+	#content .journal-intro {
+		margin-top: 10px;
+	}
+
+	html.js-enabled body.small-screen #leaderboard ul.user-services li a.my-account {
+		top: 40px;
+	}
+
+	#leaderboard ul.user-services li a.my-account {
+		top: 10px;
+	}
+	
+	/*
+	****
+	* About Page
+	****
+	*/
+
+	#section-nav {
+		background-image:none;
+		background:#E1E6E8;
+		border: solid 1px #D7DCDF;
+		width:100%;
+		padding:10px 0 10px 0;
+		margin-bottom:20px;
+	}
+
+	#section-nav ol li {
+		padding-left:10px;
+	}
+
+	#section-nav ol li a {
+		display:block;
+		height:30px;
+	}
+
+	nav dl#page-nav {
+		display:none;
+	}
+
+	#content .img-week {
+		margin-bottom:0;
+	}
+	body #header div.logon p span,
+	body #header div.logon p.access a:hover span,
+	body #header div.logon p.access a.show span {
+		background: transparent; /* others */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0,rgba(255,255,255,0.7)), color-stop(450px,rgba(255,255,255,0.7)), color-stop(600px,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0.7) 0, rgba(255,255,255,0.7) 450px, rgba(255,255,255,0) 600px) no-repeat fixed; /* Chrome10+,Safari5.1+ */
+		background: -moz-linear-gradient(left, rgba(255,255,255,0.7) 0, rgba(255,255,255,0.7) 450px, rgba(255,255,255,0) 600px) no-repeat fixed; /* FF3.6+ */
+		background: -o-linear-gradient(left, rgba(255,255,255,0.7) 0, rgba(255,255,255,0.7) 450px, rgba(255,255,255,0) 600px) no-repeat fixed; /* Opera 11.10+ */
+		background: linear-gradient(to right, rgba(255,255,255,0.7) 0, rgba(255,255,255,0.7) 450px, rgba(255,255,255,0) 600px) no-repeat fixed; /* W3C */
+	}
+	
+	body #header div.logon p span,
+	body #header div.logon p.user-actions span {
+		background: transparent;
+	}
+}
+
+@media	screen and (-webkit-min-device-pixel-ratio : 1.3) and (max-width : 640px) and (orientation : landscape),
+		screen and (-webkit-min-device-pixel-ratio : 1.3) and (max-width : 480px) and (orientation : portrait),
+		screen and (-o-min-device-pixel-ratio: 13/10) and (max-width : 640px) and (orientation : landscape),
+		screen and (-o-min-device-pixel-ratio: 13/10) and (max-width : 480px) and (orientation : portrait),
+		screen and (min-resolution: 1.3dppx) and (max-width : 640px) and (orientation : landscape),
+		screen and (min-resolution: 1.3dppx) and (max-width : 480px) and (orientation : portrait) {
+
+	#header {
+		background: url(/view/ncomms/images/journal_mobile_header_x2.jpg) no-repeat left top #dde6e8;
+		background-size: 320px 50px;
+    }
+
+}

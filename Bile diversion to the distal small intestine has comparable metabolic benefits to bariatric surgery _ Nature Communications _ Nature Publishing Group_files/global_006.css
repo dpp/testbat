@@ -1,0 +1,399 @@
+/*
+ *
+ *
+ *		global.header-v1.css
+ *		
+ *		Header styles for "v1" (original AIP) header
+ *		
+ *		@scope: 	Included on all v1 AIP pages
+ *		
+ *		@history: 	created from styles cropped out of global.main.css - goo.gl/YMhDF
+ *		
+ *		
+ */
+#constrain-header {
+	line-height: 1.534em;
+}
+#header {
+	margin-top: 6px;
+	position: relative;
+	min-height: 120px;
+	clear: both;
+}
+#header h1.block-anchor {
+	position:relative;
+	top: 20px;
+	z-index:10;
+	text-indent: -9999em;
+	direction: ltr;
+	width:66%;
+	max-width: 410px;
+	margin: 0;
+}
+/*
+[VIEW-2304]
+Adding styles for when the header contains a link back to the journal searched
+*/
+#header h1.block-anchor a {
+	display: block;
+	text-indent: -9999em;
+	direction: ltr;
+	height: 70px;
+	overflow: hidden;
+}
+/* compact header */
+#constrain-header .compact div.logon {
+	top: 20px;
+}
+#constrain-header .compact h1.block-anchor {
+	margin-top:0;
+}
+body.ie7 #constrain-header .compact h1.block-anchor {
+	margin-top:20px;
+}
+
+
+/**
+ * @subsection Search 
+ * ------------------------------------------------------------------------
+ */
+#constrain-header form.search-form {
+	white-space:nowrap;
+	margin: 0;
+	padding: 5px 5px 5px 10px;
+	font-size: 85%;
+	line-height: 1.6;
+	height: 1.6em;
+}
+#constrain-header form#header-search.top {
+	float: right;
+}
+#constrain-header form#header-search.top input.txt {
+	border: 1px solid #ccc;
+}
+#constrain-header form.search-form label {
+	font-weight: bold;
+}
+#constrain-header form.search-form * {
+	vertical-align: top;
+	display: inline-block;
+	height: 1.6em;
+	line-height: 1.6;
+}
+body.ie6 #constrain-header form.search-form *,
+body.ie7 #constrain-header form.search-form * {
+	display: inline;
+}
+#constrain-header form.search-form label,
+#constrain-header form.search-form fieldset {
+	margin: 0 5px 0 0;
+}
+#constrain-header form.search-form label,
+#constrain-header form.search-form a {
+	font-weight: normal;
+}
+#constrain-header form.search-form input.txt,
+#constrain-header form.search-form button {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#constrain-header form.search-form button {
+	border: 0 none;
+	line-height: 1;
+	background: #ececec;
+	padding: 0 4px;
+	color: #333;
+}
+#constrain-header form.search-form input.txt {
+	padding: 2px;
+	height: 1.6em;
+	line-height: 1.6;
+	color: #000;
+}
+body.ie6 #constrain-header form.search-form input.txt,
+body.ie7 #constrain-header form.search-form input.txt {
+	height: 1.4em;
+}
+#constrain-header form.search-form label.placeholder-replaces input {
+	width: 69%;
+}
+#constrain-header form.search-form input.placeholder {
+	color: #999;
+}
+#constrain-header form.search-form label.placeholder-replaces {
+	position: relative;
+	width: 150px;
+}
+#constrain-header form.search-form label input {
+	margin-left: 5px;
+}
+#constrain-header form.search-form label.placeholder-replaced span {
+	display: none;
+}
+#constrain-header form.search-form label.placeholder-replaces input[placeholder] {
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+	margin-left: 0;
+}
+/* IE7 and those that don't understand [] or apply box-sizing */
+body.ie7 #constrain-header form.search-form label.placeholder-replaced input,
+#constrain-header form.search-form label.placeholder-replaced input {
+	width: 96%;
+	position: absolute;
+	left:0;
+	top:0;
+	margin-left: 0;
+}
+/* IE7-9 supports [] selector, but not the placeholder without JS */
+.no-javascript body.ie7 #constrain-header form.search-form *,
+.no-javascript body.ie8 #constrain-header form.search-form *,
+.no-javascript body.ie9 #constrain-header form.search-form * {
+	width: auto !important;
+	position: static !important;
+}
+.no-javascript body.ie7 #constrain-header form.search-form label.placeholder-replaces input[placeholder],
+.no-javascript body.ie8 #constrain-header form.search-form label.placeholder-replaces input[placeholder],
+.no-javascript body.ie9 #header form.search-form label.placeholder-replaces input[placeholder] {
+	margin-left: 5px;	
+}
+/* Search in header */
+#header form.search-form {
+	background: transparent url(/view/images/bg_search.png) no-repeat 0 0;
+	position: absolute;
+	right: 0;
+	float: none;
+	bottom: 0;
+}
+#header form.search-form label,
+#header form.search-form a {
+	color: #fff;
+}
+#header form.search-form input.txt {
+	border: 0 none;
+}
+#header div.logon {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#header div.logon p {
+	color: inherit;
+	text-align: right;
+	margin: 6px 10px;
+	clear: right;
+	word-wrap: break-word;
+}
+#header div.logon p:first-child {
+	margin: 0 10px 6px 10px;
+	padding: 6px 0 0 0;
+}
+#header div.logon p span {
+	padding: 3px 0;
+}
+#header div.logon p span:first-child {
+	padding-left: 3px;
+}
+#header div.logon p.access {
+	font-size: 93%;
+	line-height: 1.33;
+}
+body.ie7 #header.compact div.logon p:first-child {
+	padding-top: 3px;
+}
+div.logon a {
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	font-weight: normal;
+}
+#header div.logon p span,
+#header div.logon p.access a:hover span,
+#header div.logon p.access a.show span {
+	background: transparent; /* others */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0,rgba(0,0,0,0.5)), color-stop(400px,rgba(0,0,0,0.5)), color-stop(500px,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.5) 400px, rgba(0,0,0,0) 500px) no-repeat fixed; /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.5) 400px, rgba(0,0,0,0) 500px) no-repeat fixed; /* FF3.6+ */
+	background: -o-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.5) 400px, rgba(0,0,0,0) 500px) no-repeat fixed; /* Opera 11.10+ */
+	background: linear-gradient(to right, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.5) 400px, rgba(0,0,0,0) 500px) no-repeat fixed; /* W3C */
+}
+#header div.logon p.user-actions a {
+	font-weight: bold;
+	padding: 0 0 0 18px;
+}
+#header div.logon p.user-actions span {
+	margin-left: 10px;
+}
+#header div.logon p.user-actions span:first-child {
+	margin-left:0;
+}
+#header div.logon a.login,
+#header div.logon a.logout:hover {
+	background-image: url(/view/images/bg_login.gif);
+}
+#header div.logon a.logout,
+#header div.logon a.login:hover {
+	background-image: url(/view/images/bg_logout.gif);
+}
+#header div.logon p.user-actions a.cart {
+	background-image: url(/view/images/shop_cart.png);
+	padding-left: 22px;
+}
+#header .header-tabs {
+	bottom: 0;
+	margin: 0;
+	padding-left:2px;
+	position: absolute;
+}
+#header .header-tabs li {
+	display: inline;
+}
+#header .header-tabs li a {
+	background: #fff;
+	border: 1px solid #909597;
+	float: left;
+	font-size: 93%;
+	margin-left: 3px;
+	padding: 0.1em 1em;
+}
+/* An active tab should have {
+	border-bottom: 0;
+} */
+ul.global-nav {
+	margin: 0;
+	float: left;
+}
+ul.global-nav li {
+	float: left;
+	padding: 0 20px 0 0;
+}
+ul.global-nav li a {
+	display: block;
+	color: #313131;
+	font-size: 85%;
+	font-weight: bold;
+	padding: 5px 0 5px 15px;
+	background: url(/view/images/bg_publications_links.gif) no-repeat 0 50%;
+}
+body ul.global-nav li a:hover {
+	color: #f00;
+}
+ul.global-nav li.home a {
+	font-family: garamond,"times new roman",serif;
+	font-size: 108%;
+	text-transform: lowercase;
+	color: #c00;
+	padding: 5px 0 5px 25px;
+	background-image: url(/view/images/bg_nature_home.gif);
+}
+
+#leaderboard {
+	position: relative;
+	clear: both;
+}
+ul.user-services {
+	z-index:1;
+}
+#leaderboard-ad {
+	z-index: 1;
+	overflow: visible;
+	max-height: 90px;
+}
+#leaderboard-ad .adunit-leaderboard {
+	float: none;
+	max-width: 100%;
+	position: absolute;
+	height: auto;
+	padding: 0 15px;
+	background: transparent url(/view/images/bg_leaderboard_ad.gif) no-repeat 0 0;
+}
+#leaderboard-ad img {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+#leaderboard ul.user-services {
+	float: right;
+	width: 203px;
+	font-size: 85%;
+	margin-bottom:6px;
+}
+#leaderboard ul.user-services li {
+	margin: 0 0 1px;
+	border: 1px solid #a2a2a2;
+	border-top-color: #e6e6e6;
+	border-left-color: #e6e6e6;
+	background: #faf8f9 url(/view/images/bg_leaderboard_user_services.gif) repeat-x 0 100%;
+}
+#leaderboard ul.user-services a {
+	display: block;
+	padding: 0 10px 0 35px;
+	background-repeat:no-repeat;
+	background-position:10px 50%;
+}
+
+
+#header ul.user-services {
+	float: right;
+	margin-bottom: 0;
+}
+#header ul.user-services li {
+	float: left;
+}
+#header ul.user-services a {
+	font-size: 85%;
+	color: #fff;
+	display: block;
+	padding: 0 10px;
+	background: url(/view/images/bg_register_list.png) no-repeat 0 100%; /* gif for ie6 is added in site styles */
+}
+#header ul.user-services a:hover {
+	background: url(/view/images/bg_register_list_hover.png) no-repeat 0 100%;
+}
+
+
+
+ul.breadcrumbs {
+	margin: 10px 0 -5px;
+	padding: 0;
+	float: left;
+}
+
+ul.breadcrumbs a {
+	text-transform: lowercase;
+}
+ul.breadcrumbs li {
+	display: inline;
+	font-weight: bold;
+}
+
+body.ie6 ul.breadcrumbs {
+	position: relative;
+}
+.prev-next-article li.prev {
+	left: -75px;
+}
+.prev-next-article li.next {
+	right: -1041px;
+}
+
+/* Start mobile / IE fix
+** This is required to hide the tabs when viewing the site at full size
+** Mobile css will then overwrite this when on a small screen
+** Cant be added to *.mobile.css because that isn't sent to below IE8
+** Moved here, AIPROLLOUT-183
+*/
+#js-menu,
+#main-navigation {
+	display: none;
+}
+/* End mobile / IE fix */
+
+.message-contain {
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
